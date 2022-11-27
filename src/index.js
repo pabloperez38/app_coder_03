@@ -1,7 +1,7 @@
 import { ActivityIndicator, View } from "react-native";
-import { Categorias, Producto, Productos } from "./pantallas";
 
 import AppNavigator from "./navegacion";
+import { colores } from "./constantes/tema/colores";
 import { styles } from "./styles";
 import { useFonts } from "expo-font";
 
@@ -10,9 +10,10 @@ export default function App() {
     "Sora-Regular": require("../assets/fuentes/Sora-Regular.ttf"),
     "Sora-Bold": require("../assets/fuentes/Sora-Bold.ttf"),
   });
+
   if (!loaded) {
     <View style={styles.container}>
-      <ActivityIndicator color={"#6699CC"} size={"large"} />
+      <ActivityIndicator color={colores.secundario} size="large" />
     </View>;
   }
   return <AppNavigator />;
