@@ -6,4 +6,8 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  titulo: {
+    fontFamily: "Sora-Bold",
+    fontSize: 18,
+  },
 });

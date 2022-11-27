@@ -6,7 +6,7 @@ import { styles } from "./styles";
 const Categorias = () => {
   return (
     <View style={styles.container}>
-      <Text>Categorías</Text>
+      <Text style={styles.titulo}>Categorías</Text>
     </View>
   );
 };
