@@ -1,6 +1,7 @@
 import { ActivityIndicator, View } from "react-native";
 import { Categorias, Producto, Productos } from "./pantallas";
 
+import AppNavigator from "./navegacion";
 import { styles } from "./styles";
 import { useFonts } from "expo-font";
 
@@ -14,5 +15,5 @@ export default function App() {
       <ActivityIndicator color={"#6699CC"} size={"large"} />
     </View>;
   }
-  return <Categorias />;
+  return <AppNavigator />;
 }
