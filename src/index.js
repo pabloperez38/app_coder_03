@@ -12,9 +12,11 @@ export default function App() {
   });
 
   if (!loaded) {
-    <View style={styles.container}>
-      <ActivityIndicator color={colores.secundario} size="large" />
-    </View>;
+    return (
+      <View styles={styles.container}>
+        <ActivityIndicator color={colores.secundario} size="large" />
+      </View>
+    );
   }
   return <AppNavigator />;
 }
